@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- This tells the browser that we're using the most modern character encoding.
+        This is especially important for special characters like ® or å. -->
+        <meta charset="utf-8">
+
+        <!-- This is your title tag. Shows up in the browser tab, and search results.
+            Often, for a multi-page site, we'd do something like "Name of Site | Name of Page" -->
+       
+            <title> Final Website: Brittany Godat </title>
+            
+        <!-- This meta tag is what Google uses in the search results. Describe what the page is so people will click! -->
+        <meta name="description" content="">
+
+        <!-- This tells the browser not to zoom, and that our content should be the same width as the browser window.
+        CRUCIAL for responsive design. https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Here's a few icons. There's more you can do, but these will cover you in most cases.
+        https://en.wikipedia.org/wiki/Favicon
+        There are a lot of online generators to help you, here's two: http://www.favicon.cc, https://realfavicongenerator.net/
+        Start with a 180 x 180 png for the apple, but note that it will show up MUCH smaller as a favicon. Your smallest file used by most browsers is an .ico file, which Photoshop can't create directly, which is why you need a generator.
+        If you decide to generate all icons, start with a 228px x 228px file.
+        -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- Our first stylesheet normalizes differences between browsers. It's from https://necolas.github.io/normalize.css/ -->
+        <!-- You can get more information on this here: https://bitsofco.de/a-look-at-css-resets-in-2018/ -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!-- This is a basic print stylesheet. It has a media query in it, so it will only be applied when people hit print.  -->
+        <link rel="stylesheet" href="css/print.css">
+        <!-- Here's our custom stylesheet. Open it up to add styles to your page. -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <header class="header"> 
+        
+            <a class="logo" href="#"> The Hot Mess Express</a>
+            <a class="clickable" href="#">Clothing</a>
+            <a class="clickable" href="#">Shoes</a>
+            <a class="clickable" href="#">Collections</a>
+            <a class="clickable" href="#">Sales</a>
+            <div class="search"> <input type="text" placeholder="Search">
+            
+         
+            
+        </header>
+
+        <div class="hero">
+            <img src="images/hero.png">
+        </div>
+
+        <h1>Categories</h1>
+        <div class="categories">
+            <a class="button" href="#">Tops</a>
+            <a class="button" href="#">Bottoms</a>
+            <a class="button" href="#">Shoes</a>
+            <a class="button" href="#">Dresses</a>
+            <a class="button" href="#">Swimwear</a>
+            <a class="button" href="#">Accessories</a>
+            <a class="button" href="#">Collections</a>
+            <a class="button" href="#">Sales</a>
+        </div>
+
+
+          
+          <h1>Coupons Available</h1>
+          <div class= "coupon1"> 
+                <div class="flex-grid">
+                        <div class="col"> Use the Promotional Code: BEGINNER for first time buyers</div>
+                        <div class="col">Get 15% off a $30 purchase</div>
+                        <div class="col">Get 25% off a $40 purchase</div>
+                      </div>
+
+                      <h1>Best Sellers</h1>
+                   
+                     
+                     <div class="shirts">
+                        <div>
+                            <img src="images/Screen Shot -4.png">
+                            <div class="description">
+                                <div class="title">Army Green Tee</div>
+                                <div class="price">$11.99</div>
+                            </div>
+                        </div>
+                        <div><img src="images/Screen Shot -4.png">
+                            <div class="description">
+                                    <div class="title">Army Green Tee</div>
+                                    <div class="price">$11.99</div>
+                                </div></div>
+                        <div><img src="images/Screen Shot -4.png"><div class="description">
+                                <div class="title">Army Green Tee</div>
+                                <div class="price">$11.99</div>
+                            </div></div>
+                        <div><img src="images/Screen Shot -4.png"><div class="description">
+                                <div class="title">Army Green Tee</div>
+                                <div class="price">$11.99</div>
+                            </div></div>
+                     </div>
+
+            <a class="view" href="#">View More</a>
+
+            <footer class="footer">
+                <p>Copyright 2019 Final Project</p>
+            </footer>
+
+            
+
+        <!-- This pulls jQuery from Google's Content Delivery Network -->
+        <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- This code checks for the existence of the jQuery object, if it doesn't exist, that means the line above failed,
+        Google's CDN is down. So, let's write a tag that pulls in our local jQuery instead. -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+        <!-- Here's our own custom javascript file. We load jQuery first, so we can use the jQuery library in our code -->
+        <script src="js/main.js"></script>
+    <footer></footer>
+    </body>
+</html>
